@@ -1,0 +1,66 @@
+﻿custom_phrase:
+  db_class: stabledb
+  dictionary: "f"
+  enable_completion: true
+  enable_sentence: false
+  initial_quality: 1
+  user_dict: custom_phrase
+customization: 3110991750
+engine:
+  filters:
+    - simplifier
+    - uniquifier
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - "table_translator@custom_phrase"
+    - reverse_lookup_translator
+    - script_translator
+key_binder:
+  import_preset: default
+punctuator:
+  import_preset: default
+recognizer:
+  import_preset: default
+schema:
+  description: |
+    Rime 預設的拼音輸入方案。
+    參考以下作品而創作：
+      * CC-CEDICT
+      * Android open source project
+      * Chewing - 新酷音
+      * opencc - 開放中文轉換
+    
+  name: "f"
+  schema_id: f
+  version: 0.20.custom.3110991750
+speller:
+  algebra:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["中文", "西文"]
+  - name: full_shape
+    states: ["半角", "全角"]
+  - name: ascii_punct
+    states: ["，。", "，．"]
+  - name: simplification
+    states: ["漢字", "汉字"]
+translator:
+  dictionary: f

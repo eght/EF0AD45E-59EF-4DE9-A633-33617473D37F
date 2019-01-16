@@ -1,0 +1,29 @@
+customization: 1638225277
+engine:
+  processors:
+    - recognizer
+    - speller
+    - selector
+    - navigator
+    - recognizer
+    - express_editor
+  segmentors:
+    - abc_segmentor
+    - matcher
+    - number_segmentor
+    - fallback_segmentor
+  translators:
+    - number_translator
+    - echo_translator
+    - table_translator
+"recognizer/patterns/unicode": "^[4-9]?[0-9a-f]?[0-9a-f]?[0-9a-f]?$"
+schema:
+  name: "大家好"
+  schema_id: hello
+  version: 4.custom.1638225277
+speller:
+  alphabet: 0123456789abcdef
+  auto_select: true
+translator:
+  dictionary: hello
+  enable_user_dict: false

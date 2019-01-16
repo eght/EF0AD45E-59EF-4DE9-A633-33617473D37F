@@ -1,0 +1,28 @@
+﻿customization: 1638225277
+engine:
+  processors:
+    - recognizer
+    - speller
+    - selector
+    - navigator
+    - recognizer
+    - express_editor
+  segmentors:
+    - abc_segmentor
+    - matcher
+    - number_segmentor
+    - fallback_segmentor
+  translators:
+    - number_translator
+    - echo_translator
+    - table_translator
+schema:
+  name: "英語"
+  schema_id: english
+  version: 4.custom.1638225277
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  auto_select: true
+translator:
+  dictionary: english
+  enable_user_dict: false
