@@ -1,15 +1,17 @@
 var:
-  last_build_time: 1547420777
+  last_build_time: 1550893696
   option:
     full_shape: false
-  previously_selected_schema: zhengma
+  previously_selected_schema: array30
   schema_access_time:
-    5: 1547424846
-    cangjie5: 1547424355
+    5: 1549105690
+    array30: 1550893711
+    bzzm: 1550893268
+    cangjie5: 1550893019
     combo_pinyin: 1531907522
     dvorak: 1532000289
     english: 1533927715
-    luna_pinyin_simp: 1541324048
+    luna_pinyin_simp: 1549103195
     "openbsd-english-words": 1534300475
     v3: 1533927926
-    zhengma: 1547425011
+    zhengma: 1550893118
